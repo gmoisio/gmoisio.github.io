@@ -74,10 +74,10 @@
                     <label for="inputMessage">Your message</label>
                 </div>
             </div>
-            <button id="my-form-button" type="submit" class="btn btn-primary" tabindex="4">Send</button>
+            <button id="my-form-button" type="submit" class="btn btn-primary">Send</button>
         </form>
         <hr class="featurette-divider">
-        <p id="my-form-status"></p>
+        <div id="my-form-status"></div>
         <!-- /.featurettes -->
     </main>
     <!-- /.container -->
@@ -99,10 +99,10 @@
             function success() {
                 form.reset();
                 button.style = "display: none ";
-                status.innerHTML = "Thanks!";
+                status.innerHTML = "<p class=\"text-success\"><strong>Thanks!</strong> I will answer to your message asap.</p>";
             }
             function error() {
-                status.innerHTML = "Oops! There was a problem.";
+                status.innerHTML = "<strong>Oops!</strong> There was a problem when sending the message.";
             }
             // handle the form submission event      
             form.addEventListener("submit", function (ev) {
