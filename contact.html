@@ -66,8 +66,11 @@
                 <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
-                <label for="inputMessage" class="form-label">Your message</label>
-                <textarea tclass="form-label" id="imputMessage" rows="6"></textarea>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Your message" id="inputMessage"
+                        style="height: 100px"></textarea>
+                    <label for="inputMessage">Your message</label>
+                </div>
             </div>
             <button type="submit" class="btn btn-primary">Send</button>
         </form>
