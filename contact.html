@@ -56,19 +56,21 @@
         <!-- featurettes -->
         <hr class="featurette-divider">
         <form action="https://formspree.io/f/xaylvrvb" method="POST">
+            <input type="hidden" name="_subject" value="Contact from gmoisio.github.io">
             <div class="mb-3">
                 <label for="inputName" class="form-label">Your name</label>
-                <input type="text" class="form-control" id="inputName">
+                <input type="text" class="form-control" id="inputName" tabindex="1" required autofocus>
             </div>
             <div class="mb-3">
                 <label for="inputEmail1" class="form-label">Your email address</label>
-                <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp">
+                <input type="email" name="_replyto" class="form-control" id="inputEmail1" aria-describedby="emailHelp"
+                    tabindex="2" required>
                 <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Your message" id="inputMessage"
-                        style="height: 100px"></textarea>
+                    <textarea class="form-control" placeholder="Your message" id="inputMessage" style="height: 100px"
+                        tabindex="3" required></textarea>
                     <label for="inputMessage">Your message</label>
                 </div>
             </div>
